@@ -1,21 +1,40 @@
 // function to create our basic flashcards with a front and back, question and answer.
 var basicCard = function() {
 
+    // constructor function for creating basic cards
+    function createBasicCard(front, back) {
+        this.front = front;
+        this.back = back;
+    }
 
-var fs = require('fs'); // file system
+    // array to hold our basic questions
+    var basicQuestions = [];
 
-// constructor function for creating basic cards
-function createBasicCard(question, answer) {
-	this.question = question;
-	this.answer = answer;
-}
+    // creating our cards
+    var firstPresident = new createBasicCard("Who was the first president of the United States?", "George Washington");
+    var currentPresident = new createBasicCard("Who is currently the President of The United States?", "Donald Trump");
+    var lastPresident = new createBasicCard("Who was the last President of The United States?", "Barrack Obama");
 
-var firstCard = new createBasicCard("Who was the first president of the United States?", "George Washington");
+    // pushing our questions to an array
+    basicQuestions.push(firstPresident);
+    basicQuestions.push(currentPresident);
+    basicQuestions.push(lastPresident);
 
-console.log(firstCard.question);
-console.log(firstCard.answer);
+    // log to check arrary
+    // console.log(basicQuestions);
+
+    // for loop to run through array, and display questions
+    for (var i = 0; i < basicQuestions.length; i++) {
+
+    	// loggin questions
+    	console.log("\nQuestion:\n");
+        console.log(basicQuestions[i].front);
+        console.log("\nAnswer:\n");
+        console.log(basicQuestions[i].back + "\n");
+    }
 };
 
+// call to create cards
 basicCard();
 
 // exporting our function

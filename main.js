@@ -21,16 +21,15 @@ const inquirer = require("inquirer");
 // inquirer app to allow user to choose which card they would like to make
 inquirer.prompt([{
     name: "chooseCard",
-    message: "What kind of card would you like to create?",
-    choices: ["Basic Card", "Cloze Card"],
+    message: "Which set of flashcards would you like to view?",
+    choices: ["Basic Cards", "Cloze Cards"],
     type: "list"
 }]).then(function(cardChoice) {
-    if (cardChoice.chooseCard === 'Basic Card') {
-        console.log("user has chosen basic card, will run function");
+    if (cardChoice.chooseCard === 'Basic Cards') {
+        console.log("User has chosen to view the Basic Flashcards:");
         basicCard();
-    } else if (cardChoice.chooseCard === 'Cloze Card') {
-        console.log("user has chosen cloze card, will run function");
+    } else if (cardChoice.chooseCard === 'Cloze Cards') {
+        console.log("User has chosen to view the Cloze Flashcards:");
         clozeCard();
     }
-    console.log(cardChoice.chooseCard);
 });

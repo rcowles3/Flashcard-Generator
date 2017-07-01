@@ -30,8 +30,7 @@ var clozeCards = function() {
     	// building out the response in the terminal
     	console.log("\nQuestion:\n");
         console.log(clozeQuestions[i].partialText);
-        console.log("\nAnswer:\n");
-        console.log(clozeQuestions[i].cloze);
+        console.log("\nAnswer: " + clozeQuestions[i].cloze);
         console.log(clozeQuestions[i].fullText + "\n");
     }
 };

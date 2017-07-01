@@ -35,7 +35,7 @@ var basicCard = function() {
 };
 
 // call to create cards
-basicCard();
+// basicCard();
 
 // exporting our function
 module.exports = basicCard;

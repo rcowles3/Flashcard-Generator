@@ -14,7 +14,7 @@ var clozeCards = function() {
     // creating questions
     var nbaFinals = new createClozeCard("The damn Warriors won the 2017 NBA Finals.", "Warriors");
     var worldSeries = new createClozeCard("The Chicago Cubs won the World Series in 2016.", "Chicago Cubs");
-    var terminator = new createClozeCard("Who is the Terminator?", "Arnold Schwarzenegger");
+    var terminator = new createClozeCard("Arnold Schwarzenegger is the Terminator.", "Arnold Schwarzenegger");
 
     // pushing our questions to our array
     clozeQuestions.push(nbaFinals);
@@ -37,7 +37,7 @@ var clozeCards = function() {
 };
 
 // call to create clozeCards
-clozeCards();
+// clozeCards();
 
 // exporting our function
 module.exports = clozeCards;

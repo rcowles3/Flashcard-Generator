@@ -2,7 +2,7 @@
   "name": "flashcard-generator",
   "version": "1.0.0",
   "description": "This is a backend application that creates basic flashcards through the use of JS constructors.",
-  "main": "basicCard.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rcowles3/Flashcard-Generator/issues"
   },
-  "homepage": "https://github.com/rcowles3/Flashcard-Generator#readme"
+  "homepage": "https://github.com/rcowles3/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.1.1"
+  }
 }

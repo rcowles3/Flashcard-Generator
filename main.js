@@ -7,8 +7,6 @@
 
 // requiring npm's, and declaring CL input, reading exports
 var fs = require('fs'); // file system
-var searchArg = process.argv[3];
-var nodeArg = process.argv[2];
 var basicCard = require('./basicCard.js');
 var clozeCard = require('./clozeCard.js');
 
